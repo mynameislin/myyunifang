@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_bottom.png",
+        "source": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_bottom.png"
+    },
+    {
+        "merged": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_right.png",
+        "source": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_right.png"
+    },
+    {
+        "merged": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_left.png",
+        "source": "D:\\UI\\xiangmuer\\myyunifang\\library\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_left.png"
+    }
+]

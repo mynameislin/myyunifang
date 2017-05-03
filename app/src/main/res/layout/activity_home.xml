@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="35dp">
+       <TextView
+           android:text="御泥坊VIP商城"
+           android:textSize="20sp"
+           android:textColor="#FBC2D6"
+          android:gravity="center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        >
+               <RadioButton
+                   android:id="@+id/rb1"
+                   android:gravity="center"
+                   android:button="@null"
+                   android:focusable="true"
+                   android:focusableInTouchMode="true"
+                 android:drawableTop="@drawable/rb_home"
+                   android:text="首页"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:gravity="center"
+            android:button="@null"
+
+            android:drawableTop="@drawable/rb_classfy"
+            android:text="分类"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:gravity="center"
+            android:button="@null"
+
+            android:drawableTop="@drawable/rb_shopping"
+            android:text="购物车"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+                android:id="@+id/rb4"
+                android:gravity="center"
+                android:button="@null"
+
+                android:drawableTop="@drawable/rb_user"
+                android:text="个人中心"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

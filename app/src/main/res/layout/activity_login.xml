@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D5D6"
+   >
+   <RelativeLayout
+       android:id="@+id/rl"
+       android:background="#F7F7F7"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back_normal"
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+       <TextView
+           android:text="登录"
+           android:textSize="30sp"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/login_zhuce"
+           android:text="注册"
+           android:textSize="30sp"
+           android:textColor="@android:color/holo_red_light"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+    <EditText
+        android:layout_below="@id/rl"
+        android:id="@+id/login_name"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="   手机号"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+   <EditText
+       android:id="@+id/login_pwd"
+       android:layout_below="@id/login_name"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:hint="    密码"
+       android:background="@android:color/white"
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/login_lose"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="忘记密码"
+        android:layout_below="@id/login_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_but"
+        android:layout_centerHorizontal="true"
+        android:text="登录"
+        android:textSize="20sp"
+        android:layout_below="@id/login_lose"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+         android:layout_marginBottom="70dp"
+        android:text="第三方快速登录"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/login_qq"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_qq"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/login_sina"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_sina"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/login_weixin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_weixin"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

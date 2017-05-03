@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+<ImageView
+    android:id="@+id/new1"
+    android:background="@drawable/new1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <ImageView
+      android:layout_below="@id/new1"
+        android:background="@drawable/new2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_time"
+        android:background="@android:color/darker_gray"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="跳过3s"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+</RelativeLayout>

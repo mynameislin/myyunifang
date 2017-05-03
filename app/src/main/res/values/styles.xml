@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:listDivider">@drawable/divider</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 非首页（非第一级页面让Activity透明） -->
+    <style name="otherPageStyle" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

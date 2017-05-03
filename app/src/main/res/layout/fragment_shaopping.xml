@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+             android:text="购物车"
+             android:textSize="20sp"
+            android:gravity="center"
+            android:layout_height="38dp"
+            />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#000000"
+      />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shaoping_xiangqing"
+        >
+        <rikao.bawei.com.myyunifang.view.QQListView
+
+            android:id="@+id/xlv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="2dp"
+            >
+        </rikao.bawei.com.myyunifang.view.QQListView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:orientation="horizontal"
+          android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:button="@drawable/select_checkbox"
+                android:focusable="false"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/shaoping_chebox"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="全选"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/shaoping_chebox"
+                android:layout_toEndOf="@+id/shaoping_chebox" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#FBC2D6"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="结算"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:id="@+id/shaoping_jiesuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="￥0.00"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#FBC2D6"
+                android:id="@+id/shaoping_sum_price"
+                android:layout_marginRight="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/shaoping_jiesuan"
+                android:layout_toStartOf="@+id/shaoping_jiesuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:text="总计 :"
+                android:gravity="center"
+                android:id="@+id/shaoping_tv1"
+                android:textSize="20sp"
+                android:textColor="#FBC2D6"
+
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/shaoping_sum_price"
+                android:layout_toStartOf="@+id/shaoping_sum_price" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/shaoping_xiaoguo"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:src="@drawable/shopping_trolley_empty"
+            android:id="@+id/shopping_iv"
+            />
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/shopping_iv"
+            android:text="购物车还是空的哦快去逛逛吧"
+            android:id="@+id/textView2" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="逛一逛"
+            android:background="#ff0000"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/button" />
+    </RelativeLayout>
+
+</LinearLayout>
